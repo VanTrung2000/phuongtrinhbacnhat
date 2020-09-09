@@ -1,36 +1,38 @@
-﻿using System;
+using System;
 
 namespace phuongtrinhbacnhat
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Giaiphuongtrinh()
         {
-           
-            Console.WriteLine("phuong trinh bac nhat dang: 'a * x + b = 0'");
-
-            Console.Write("a: ");
-            double a = Convert.ToDouble(Console.ReadLine());
-            Console.Write("b: ");
-            double b = Convert.ToDouble(Console.ReadLine());
+            double a;
+            double b;
+            Console.WriteLine("a: ");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("b: ");
+            b = Convert.ToDouble(Console.ReadLine());
             if (a != 0)
             {
                 double solution = -b / a;
-                Console.Write("phuong trinh co nghiem duy nhat: {0}", solution);
+                Console.Write("The solution is: {0}!", solution);
             }
             else
             {
                 if (b == 0)
                 {
-                    Console.Write("Phuong trinh vo so nghiem");
+                    Console.Write("The solution is all x!");
                 }
                 else
                 {
-                    Console.Write("Phuong trinh vo nghiem");
-                  
+                    Console.Write("Nod solution!");
                 }
             }
-            Console.ReadKey();
+        }
+        static void Main(string[] args)
+        {
+            Giaiphuongtrinh();
+          Console.ReadKey();
         }
     }
 }
